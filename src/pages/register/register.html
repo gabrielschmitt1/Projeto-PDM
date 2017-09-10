@@ -1,0 +1,52 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>registro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row class="logo-row">
+        <ion-col></ion-col>
+        <ion-col width-67>
+          <img src="../assets/imgs/logo.png"/>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <div class="register-box">
+        <form>
+          <ion-row>
+            <ion-col>
+              <ion-list inset>
+                  <ion-item>
+                      <ion-input type="text" placeholder="Nome" name="Nome"></ion-input>
+                  </ion-item>
+                <ion-item>
+                  <ion-input type="text" placeholder="Email" name="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input type="password" placeholder="Password" name="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="password" placeholder="Corfirm Password" name="Corfirm Password"></ion-input>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          
+          <ion-row>
+            <ion-col class="signup-col">
+              <button ion-button class="submit-btn" full type="submit" (click)="register()">Cadastrar</button>
+            </ion-col>
+          </ion-row> 
+        </form>
+      </div>
+</ion-content>
