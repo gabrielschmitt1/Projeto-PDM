@@ -10,4 +10,5 @@ export class HomePage {
   constructor(public navCtrl: NavController, public app: App) {
 
   }
+ 
 }

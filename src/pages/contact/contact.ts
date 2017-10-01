@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  isAndroid: boolean = false;
 
   constructor(public navCtrl: NavController) {
 
