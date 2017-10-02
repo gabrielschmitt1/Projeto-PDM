@@ -7,5 +7,15 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-item *ngFor="let item of items">
+    <ion-avatar item-start>
+      <img src="../assets/imgs/bar.jpg">
+    </ion-avatar>
+    <h2>{{ item }}</h2>
+    <p>This town ain't big enough for the two of us!</p>
+    <ion-note item-end>
+      <button ion-button-ligth icon-only class="zzz"><ion-icon class="xxx" name="notifications"></ion-icon></button>
+      <button ion-button-ligth icon-only class="zzz"><ion-icon class="xxx" name="star"></ion-icon></button>    
+    </ion-note>
+  </ion-item>
 </ion-content>
