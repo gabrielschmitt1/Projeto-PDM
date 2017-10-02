@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
+import { BuscarFiltroPage } from '../buscar-filtro/buscar-filtro';
 
 @Component({
   selector: 'page-buscar',
   templateUrl: 'buscar.html'
 })
+
 export class BuscarPage {
   
   items;
@@ -12,37 +14,15 @@ export class BuscarPage {
     this.initializeItems();
   }
 
-  private isOn: boolean = false;
-  
-    getButtonText(): string {
-      return `Switch ${ this.isOn ? 'Off' : 'On' }`;
-    }
-    setState(): void {
-      this.isOn = !this.isOn;
-    }
-  
-    toggleDetails() {
-      this.isOn = !this.isOn;
-    }
-
-    logout(){
-        // Remove API token 
-        const root = this.app.getRootNav();
-        root.popToRoot();
-    }
     initializeItems() {
       this.items = [
-        'Angular 1.x',
-        'Angular 2',
-        'ReactJS',
-        'EmberJS',
-        'Meteor',
-        'Typescript',
-        'Dart',
-        'CoffeeScript'
+        'Outback',
+        'Calaf',
+        'Garota Carioca',
+        'Divina Lounge',
+        'Capela'
       ];
     }
-  
     getItems(ev) {
       // Reset items back to all of the items
       this.initializeItems();
@@ -56,5 +36,8 @@ export class BuscarPage {
           return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
         })
       }
+    }
+    filtro(){
+      this.navCtrl.push(BuscarFiltroPage);
     }
 }

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Eu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="list-avatar-page">
+
+  <ion-list>
+    <ion-list-header>
+      <h2>Configurações</h2>
+    </ion-list-header>
+    <ion-item (click)="welcome()">Login</ion-item>
+    <ion-item (click)="avaliacao()">Minhas avaliações</ion-item>
+    <ion-item (click)="sugestao()">Sugerir estabelecimentos</ion-item>
+  </ion-list>
+  <ion-list>
+      <ion-list-header>
+        <h2>Sobre</h2>
+      </ion-list-header>
+      <ion-item (click)="sobre()">Sobre o aplicativo</ion-item>
+      <ion-item (click)="melhoria()">Sugestões de melhoria</ion-item>
+      <ion-item (click)="contato()">Fale conosco</ion-item>
+      <ion-item (click)="termosUso()">Termos de uso</ion-item>
+    </ion-list>
+
+</ion-content>
