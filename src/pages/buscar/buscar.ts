@@ -10,6 +10,7 @@ import { BuscarFiltroPage } from '../buscar-filtro/buscar-filtro';
 export class BuscarPage {
 
   items;
+  descricao;
   constructor(public navCtrl: NavController, public app: App) {
     this.initializeItems();
   }
@@ -19,10 +20,18 @@ export class BuscarPage {
         'Outback',
         'Calaf',
         'Garota Carioca',
-        'Divina Lounge',
-        'Capela'
+        'Divina Living',
+        'Capela Lounge Bar'
+      ];
+      this.descricao = [
+        'Outback Steakhouse é uma cadeia de restaurantes norte-americana de casual dining',
+        'Bar do Calaf é símbolo da cultura boêmia de Brasília',
+        'A Choperia Garota Carioca é uma choperia em Brasília inspirada nos bares das décadas de 50 e 60 do Rio de Janeiro',
+        'O Divina Living Bar chega a Brasília com uma proposta mais ousada e que promete mudar o conceito dos bares da capital federal',
+        'Só no Capella você encontra um ambiente perfeito para sua diversão'
       ];
     }
+    
     getItems(ev) {
       // Reset items back to all of the items
       this.initializeItems();
@@ -37,6 +46,7 @@ export class BuscarPage {
         })
       }
     }
+    // metodo para acesso a pagina de filtro
     filtro(){
       this.navCtrl.push(BuscarFiltroPage);
     }

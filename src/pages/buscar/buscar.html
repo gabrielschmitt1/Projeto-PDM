@@ -39,12 +39,12 @@
 
     <ion-list-header>Hoje</ion-list-header>
 
-    <ion-item *ngFor="let item of items">
+    <ion-item *ngFor="let item of items; let i = index">
         <ion-avatar item-start>
             <img src="../assets/imgs/bar.jpg">
         </ion-avatar>
         <h2>{{ item }}</h2>
-        <p>This town ain't big enough for the two of us!</p>
+        <p>{{ descricao[i] }}</p>
         <ion-note item-end>22:00</ion-note>
     </ion-item>
 
