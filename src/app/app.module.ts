@@ -18,6 +18,7 @@ import { TermosUsoPage } from '../pages/termos-uso/termos-uso';
 import { MelhoriaPage } from '../pages/melhoria/melhoria';
 import { BuscarFiltroPage } from '../pages/buscar-filtro/buscar-filtro';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AlterarSenhaPage } from '../pages/alterar-senha/alterar-senha';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TermosUsoPage,
     ContatoPage,
     SobrePage,
+    AlterarSenhaPage,
     BuscarFiltroPage,
     SugestaoPage,
     AvaliacaoPage,
@@ -51,8 +53,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InteressePage,
     SobrePage,
     SugestaoPage,
+    RegisterPage,
     MelhoriaPage,
     TermosUsoPage,
+    AlterarSenhaPage,
     BuscarFiltroPage,
     ContatoPage,
     AvaliacaoPage,
@@ -61,7 +65,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DescobrirPage,
     Welcome,
     Login,
-    RegisterPage,
     TabsPage
   ],
   providers: [

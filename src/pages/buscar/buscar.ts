@@ -8,7 +8,7 @@ import { BuscarFiltroPage } from '../buscar-filtro/buscar-filtro';
 })
 
 export class BuscarPage {
-  
+
   items;
   constructor(public navCtrl: NavController, public app: App) {
     this.initializeItems();

@@ -1,65 +1,65 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-    <ion-buttons end>
-      <button ion-button (click)="filtro()">
+    <ion-navbar color="primary">
+        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+        <ion-buttons end>
+            <button ion-button (click)="filtro()">
         <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
       </button>
-    </ion-buttons>
-  </ion-navbar>
-  <ion-toolbar>
-      <ion-grid class="oi">
-          <ion-row>
-            <ion-col col-3>
-              <ion-buttons >
-                <button ion-button icon-only><ion-icon name="beer"></ion-icon></button>
-              </ion-buttons>
-            </ion-col>
-            <ion-col col-3>
-              <ion-buttons >
-                <button ion-button icon-only><ion-icon name="pizza"></ion-icon></button>
-              </ion-buttons>
-            </ion-col>
-            <ion-col col-3>
-              <ion-buttons >
-                <button ion-button icon-only><ion-icon name="restaurant"></ion-icon></button>
-              </ion-buttons>
-            </ion-col>
-            <ion-col col-3>
-              <ion-buttons >
-                <button ion-button icon-only><ion-icon name="notifications"></ion-icon></button>
-              </ion-buttons>
-            </ion-col>
-          </ion-row>
+        </ion-buttons>
+    </ion-navbar>
+    <ion-toolbar>
+        <ion-grid class="buscar_grid">
+            <ion-row>
+                <ion-col col-3>
+                    <ion-buttons>
+                        <button ion-button icon-only><ion-icon name="beer"></ion-icon></button>
+                    </ion-buttons>
+                </ion-col>
+                <ion-col col-3>
+                    <ion-buttons>
+                        <button ion-button icon-only><ion-icon name="pizza"></ion-icon></button>
+                    </ion-buttons>
+                </ion-col>
+                <ion-col col-3>
+                    <ion-buttons>
+                        <button ion-button icon-only><ion-icon name="restaurant"></ion-icon></button>
+                    </ion-buttons>
+                </ion-col>
+                <ion-col col-3>
+                    <ion-buttons>
+                        <button ion-button icon-only><ion-icon name="notifications"></ion-icon></button>
+                    </ion-buttons>
+                </ion-col>
+            </ion-row>
         </ion-grid>
-  </ion-toolbar>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-list-header>Hoje</ion-list-header>
-
-  <ion-item *ngFor="let item of items">
-    <ion-avatar item-start>
-      <img src="../assets/imgs/bar.jpg">
-    </ion-avatar>
-    <h2>{{ item }}</h2>
-    <p>This town ain't big enough for the two of us!</p>
-    <ion-note item-end>22:00</ion-note>
-  </ion-item>
-
-  <ion-list>
-
-    <ion-list-header>Amanhã</ion-list-header>
+    <ion-list-header>Hoje</ion-list-header>
 
     <ion-item *ngFor="let item of items">
-      <ion-avatar item-start>
-        <img src="../assets/imgs/festa.jpg">
-      </ion-avatar>
-      <h2>{{ item }}</h2>
-      <p>This town ain't big enough for the two of us!</p>
-      <ion-note item-end>22:00</ion-note>
+        <ion-avatar item-start>
+            <img src="../assets/imgs/bar.jpg">
+        </ion-avatar>
+        <h2>{{ item }}</h2>
+        <p>This town ain't big enough for the two of us!</p>
+        <ion-note item-end>22:00</ion-note>
     </ion-item>
-  </ion-list>
+
+    <ion-list>
+
+        <ion-list-header>Amanhã</ion-list-header>
+
+        <ion-item *ngFor="let item of items">
+            <ion-avatar item-start>
+                <img src="../assets/imgs/festa.jpg">
+            </ion-avatar>
+            <h2>{{ item }}</h2>
+            <p>This town ain't big enough for the two of us!</p>
+            <ion-note item-end>22:00</ion-note>
+        </ion-item>
+    </ion-list>
 
 </ion-content>

@@ -1,23 +1,31 @@
-<ion-content padding id="welcome">
-  <img src="assets/imgs/logo.png" class="logo"/>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <h3>Para ter acesso as configuracoes é necessário estar logado</h3>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Bem vindo
+        </ion-title>
+    </ion-navbar>
+</ion-header>
 
-  <ion-grid >
-    <ion-row>
-      <ion-col center text-center>
-        <button ion-button full color="success" (click)="register()">Cadastrar</button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col center text-center>
-        <button ion-button full color="lightText" (click)="login()">Entrar</button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content padding id="welcome">
+    <img src="assets/imgs/logo.png" class="logo" />
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <h3>Para ter acesso as configuracoes é necessário estar logado</h3>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col center text-center>
+                <button ion-button full color="success" (click)="register()">Cadastrar</button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col center text-center>
+                <button ion-button full color="lightText" (click)="login()">Entrar</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
