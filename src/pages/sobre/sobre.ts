@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-sobre',
   templateUrl: 'sobre.html'
 })
+
 export class SobrePage {
   isAndroid: boolean = false;
 

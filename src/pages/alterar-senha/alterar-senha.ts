@@ -5,6 +5,7 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-alterar-senha',
   templateUrl: 'alterar-senha.html',
 })
+
 export class AlterarSenhaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

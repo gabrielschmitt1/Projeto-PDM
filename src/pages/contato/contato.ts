@@ -5,9 +5,11 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-contato',
   templateUrl: 'contato.html',
 })
+
 export class ContatoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
   }
 
 }

@@ -5,9 +5,11 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-avaliacao',
   templateUrl: 'avaliacao.html',
 })
+
 export class AvaliacaoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
   }
 
 }

@@ -11,6 +11,8 @@ export class BuscarPage {
 
   items;
   descricao;
+  time;
+  image;
   constructor(public navCtrl: NavController, public app: App) {
     this.initializeItems();
   }
@@ -30,6 +32,20 @@ export class BuscarPage {
         'O Divina Living Bar chega a Brasília com uma proposta mais ousada e que promete mudar o conceito dos bares da capital federal',
         'Só no Capella você encontra um ambiente perfeito para sua diversão'
       ];
+      this.time = [
+        '22:30',
+        '21:40',
+        '20:55',
+        '23:00',
+        '01:00',
+      ];
+      this.image = [
+        '../assets/imgs/outback.png',
+        '../assets/imgs/festa.jpg',
+        '../assets/imgs/bar.jpg',
+        '../assets/imgs/restaurante.png',
+        '../assets/imgs/pizzaria.jpg'
+      ]
     }
     
     getItems(ev) {

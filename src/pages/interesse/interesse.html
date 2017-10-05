@@ -1,21 +1,57 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Interesses
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Interesses
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-item *ngFor="let item of items">
-    <ion-avatar item-start>
-      <img src="../assets/imgs/bar.jpg">
-    </ion-avatar>
-    <h2>{{ item }}</h2>
-    <p>This town ain't big enough for the two of us!</p>
-    <ion-note item-end>
-      <button ion-button-ligth icon-only class="zzz"><ion-icon class="xxx" name="notifications"></ion-icon></button>
-      <button ion-button-ligth icon-only class="zzz"><ion-icon class="xxx" name="star"></ion-icon></button>    
-    </ion-note>
-  </ion-item>
+    <ion-card *ngFor="let item of items; let i = index">
+
+        <img src="{{ image[i] }}" />
+
+        <ion-card-content>
+            <ion-card-title>
+                {{ item }}
+            </ion-card-title>
+            <p>
+                {{ descricao[i] }}
+            </p>
+        </ion-card-content>
+        <ion-row no-padding>
+            <ion-col>
+                <button ion-button clear small color="danger" icon-start>
+                    <ion-icon name='star'></ion-icon>
+                    Favorito
+                  </button>
+            </ion-col>
+            <ion-col text-center>
+                <button ion-button clear small color="danger" icon-start>
+                    <ion-icon name='notifications'></ion-icon>
+                    Notificação
+                  </button>
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
+
+
+    <!--
+    <ion-item *ngFor="let item of items">
+        <ion-avatar item-start>
+            <img src="../assets/imgs/bar.jpg">
+        </ion-avatar>
+        <h2>{{ item }}</h2>
+        <p>This town ain't big enough for the two of us!</p>
+        <ion-note item-end>
+            <button ion-button-ligth icon-only class="button-class">
+        <ion-icon class="icon-class" name="notifications"></ion-icon>
+      </button>
+            <button ion-button-ligth icon-only class="button-class">
+        <ion-icon class="icon-class" name="star"></ion-icon>
+      </button>
+        </ion-note>
+    </ion-item>
+    -->
 </ion-content>
