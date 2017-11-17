@@ -1,11 +1,33 @@
 <ion-header>
-
-    <ion-navbar>
-        <ion-title>avaliação</ion-title>
-    </ion-navbar>
-
-</ion-header>
-
-<ion-content padding>
-
-</ion-content>
+    
+      <ion-navbar>
+        <ion-title>Meu Fluxo</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    <ion-content padding>
+      <h2>Adicionar Fluxo</h2>
+      <form (ngSubmit)="saveData()">
+        <ion-item>
+          <ion-label>Data</ion-label>
+          <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="fluxo.dtFluxo" name="dtFluxo" required=""></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>Tipo</ion-label>
+          <ion-select [(ngModel)]="fluxo.tipo" name="tipo" required="">
+            <ion-option value="Renda">Renda</ion-option>
+            <ion-option value="Gasto">Gasto</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Descrição</ion-label>
+          <ion-input type="text" placeholder="Descricao" [(ngModel)]="fluxo.descricao" name="descricao" required="" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Valor</ion-label>
+          <ion-input type="number" placeholder="Valor" [(ngModel)]="fluxo.valor" name="valor" required="" ></ion-input>
+        </ion-item>
+        <button ion-button type="submit" block>Gravar Dados</button>
+      </form>
+    </ion-content>
